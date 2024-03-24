@@ -37,7 +37,7 @@
    --bg-light: #f7f9fc;
 }
 
-body{
+body {
       font-family: var(--body-font);
       color: var(--text-dark);
       width: 100%;
@@ -51,7 +51,7 @@ body{
       align-items: center;
 }
 
-h1{
+h1 {
    font-family: var(--heading-font);
    font-weight: 600;
    font-size: var(--h1-size);
@@ -61,17 +61,15 @@ h1{
    line-height: var(--h1-height);
 }
 
-h2{
+h2 {
    font-family: var(--heading-font);
-   font-weight: 500;
-   font-size: var(--h2-size);
+   font-weight: 600;
+   font-size: var(--h3-size);
    margin: 0;
    width: 100%;
-   letter-spacing: -0.25px;
-   line-height: var(--h2-height);
 }
 
-h3{
+h3 {
    font-family: var(--heading-font);
    font-weight: 500;
    font-size: var(--h3-size);
@@ -79,7 +77,7 @@ h3{
    width: 100%;
 }
 
-h4{
+h4 {
    font-family: var(--heading-font);
    font-weight: 500;
    font-size: var(--h4-size);
@@ -88,7 +86,7 @@ h4{
    letter-spacing: 0.25px;
 }
 
-h5{
+h5 {
    font-family: var(--heading-font);
    font-weight: 500;
    font-size: var(--h5-size);
@@ -96,7 +94,7 @@ h5{
    width: 100%;
 }
 
-h6{
+h6 {
    font-family: var(--heading-font);
    font-weight: 500;
    font-size: var(--h6-size);
@@ -105,25 +103,26 @@ h6{
    letter-spacing: 0.25px;
 }
 
-a{
+a {
    text-decoration: none;
    color: var(--purple-1);
    font-weight: 500;
    transition: color 0.25s ease;
 }
 
-p{
+p {
    font-size: var(--p-size);
    line-height: var(--p-height);
    font-weight: 400;
    margin: var(--spacing-md) 0 ;
 }
 
-a:hover{
+a:hover {
    color: var(--primary-accent)
 }
 
 /* Layout Styles */
+
 .section-container {
    width: 100%;
    max-width: var(--standart-width);
@@ -148,6 +147,7 @@ a:hover{
    justify-content: center;
 
  }
+
  .two-column > .col-right {
    width: 50%;
    box-sizing: border-box;
@@ -159,9 +159,8 @@ a:hover{
 
  }
 
-
 .subtitle,
-.subtitle2{
+.subtitle2 {
    color: var(--purple-1);
    font-family: var(--heading-font);
    font-weight: 500;
@@ -169,7 +168,7 @@ a:hover{
    line-height: var(--subtitle-height);
 }
 
-.subtitle2{
+.subtitle2 {
    color: var(--blue-1);
 }
 
@@ -180,7 +179,7 @@ a:hover{
    letter-spacing: 0.25px;
 }
 
-.primary-button{
+.primary-button {
    font-family: var(--body-font);
    font-size: var(--button-size);
    letter-spacing: 1.25px;
@@ -192,19 +191,21 @@ a:hover{
    padding: var(--spacing-sm) var(--spacing-md);
    transition: all 0.15s ease;
 }
-.navbar-button{
+
+.navbar-button {
    background: rgba(250, 250, 250, 0.25);
 }
-.navbar-button:hover{
+
+.navbar-button:hover {
    background: rgba(250, 250, 250, 0.5);
 }
 
-.primary-button:hover{
+.primary-button:hover {
    background-color: var(--primary-button-hover);
    cursor: pointer;
 }
 
-.secondary-button{
+.secondary-button {
    font-family: var(--body-font);
    font-size: var(--button-size);
    letter-spacing: 1.25px;
@@ -216,12 +217,12 @@ a:hover{
    transition: all 0.15s ease;
 }
 
-.secondary-button:hover{
+.secondary-button:hover {
    opacity:0.75;
    cursor: pointer;
 }
 
-.with-icon{
+.with-icon {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -230,7 +231,8 @@ align-items: center;
 .with-icon > img {
    transition: transform 0.2s;
 }
-.with-icon:hover > img{
+
+.with-icon:hover > img {
    transform: translateX(4px);
 }
 
@@ -244,27 +246,31 @@ align-items: center;
    max-width: var(--standart-width);
    padding: 0 var(--spacing-md);
 }
+
 .menu {
    display: flex;
    list-style: none;
    justify-content: center;
    align-items: center;
 }
- .menu a{
+
+ .menu a {
    color: var(--text-light);
    margin: 0 var(--spacing-md);
    font-weight: bold;
  }
- .menu a:hover{
+
+ .menu a:hover {
    text-decoration: underline;
  }
 
  /* HERO STYLES*/
+
  main {
    margin: var(--spacing-xl);
  }
 
- .button-container{
+ .button-container {
    display: flex;
    margin: var(--spacing-md) 0;
  }
@@ -290,6 +296,7 @@ align-items: center;
 
 
   /* PARTNERS SECTION */
+
   .partners-grid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -302,4 +309,24 @@ align-items: center;
   .partners-grid img {
    height: 60px;
    place-self: center;
+  }
+
+  /* UNIFIED PLATFORM SECTION */
+
+  .unified-platform-section {
+   padding: var(--spacing-xl) 0;
+  }
+
+  .unified-platform-section h2 {
+   width: 50%;
+   margin-bottom: var(--spacing-md);
+  }
+
+  .unified-platform-section .primary-button {
+   background-color: var(--purple-1);
+   margin: var(--spacing-md) 0;
+  }
+
+  .unified-platform-section .primary-button:hover {
+   background-color: var(--primary-accent);
   }
