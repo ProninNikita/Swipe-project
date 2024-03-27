@@ -533,11 +533,12 @@ align-items: center;
 .virtual-events-section {
    display: flex;
    justify-content: center;
+   padding: calc(var(--spacing-xl) *2) 0;
 }
 
 .virtual-events-section .primary-button {
    background-color: var(--purple-1);
-   margin: var(--spacing-md) 0;
+   margin: var(--spacing-md) 0 0 0;
 }
 
 .virtual-events-section .primary-button:hover {
